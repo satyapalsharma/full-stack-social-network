@@ -1,0 +1,121 @@
+# =============================================================================
+# General & OS-specific Ignores
+# =============================================================================
+
+# Logs and databases
+*.log
+logs
+*.sql
+*.sqlite
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =============================================================================
+# IDE / Editor specific
+# =============================================================================
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ, etc.)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =============================================================================
+# Dependency & Package Manager Ignores
+# =============================================================================
+
+# Node.js modules
+# This will ignore node_modules in the root, client/, and server/ directories
+node_modules/
+
+# NPM/Yarn/PNPM lock files
+# It's best practice to commit the lock file for the package manager you are using.
+# Uncomment the ones you are NOT using to avoid conflicts if multiple developers
+# use different package managers.
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Package manager debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =============================================================================
+# Environment & Configuration
+# =============================================================================
+
+# Environment variables
+# These files contain sensitive information like API keys, database credentials, etc.
+# A .env.example file should be committed to the repository instead.
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+.env.development
+.env.production
+.env.test
+
+# =============================================================================
+# Build Artifacts & Caches
+# =============================================================================
+
+# General build output directories
+build/
+dist/
+out/
+
+# Client-side build artifacts (React/Vite)
+client/build/
+client/dist/
+.vite/
+
+# Server-side build artifacts (e.g., from TypeScript compilation)
+server/dist/
+server/build/
+
+# Caches
+.npm/
+.yarn/cache
+.pnpm-store/
+.cache/
+
+# =/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/
+# Testing
+# =/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/
+
+# Test coverage reports
+coverage/
+.nyc_output/
+
+# =============================================================================
+# Miscellaneous
+# =============================================================================
+
+# Production builds / packaged files
+*.tgz
+
+# Temporary files
+*.tmp
+*.swp
